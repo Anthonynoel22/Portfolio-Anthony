@@ -5,7 +5,6 @@ import Project from "./components/Project/Project.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
-import './App.css'
 
 function App() {
 

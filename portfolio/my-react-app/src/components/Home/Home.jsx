@@ -5,7 +5,7 @@ import "./Home.scss";
 
 function Home(){
     return (
-        <div className="home">
+        <div >
         <p>  Hey, je suis <strong>Anthony NOEL KIRUPARAJAH</strong>,<br />
         Je suis développeur Full-Stack, spécialisée en accessibilité numérique
         (A11Y). Passionnée par le développement front-end et back-end, j'aime
