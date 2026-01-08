@@ -1,9 +1,10 @@
 import React from "react";
+import "./Footer.scss";
 
 function Footer() {
     return (
-        <footer>
-            <p>© 2024 - Tous droits réservés</p>
+        <footer className="footer">
+            <p>© 2025 - Tous droits réservés</p>
         </footer>
     );
 };

@@ -1,0 +1,8 @@
+.footer {
+    position: fixed; // colle le footer à la fenêtre [web:1][web:10]
+    left: 0;
+    bottom: 0;
+    width: 100%; // pour pouvoir centrer le contenu correctement [web:1]
+    text-align: center; // centre horizontalement le texte [web:9]
+    padding: 10px 0;
+}
