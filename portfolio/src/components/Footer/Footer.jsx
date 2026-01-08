@@ -4,7 +4,7 @@ import "./Footer.scss";
 function Footer() {
     return (
         <footer className="footer">
-            <p>© 2025 - Tous droits réservés</p>
+            <p>© 2026 - Tous droits réservés</p>
         </footer>
     );
 };

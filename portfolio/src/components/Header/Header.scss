@@ -1,23 +1,23 @@
 .header {
-    display: flex; // logo et nav sur la même ligne
-    justify-content: space-between; // logo à gauche, nav à droite
-    align-items: center; // alignement vertical
-    padding: 10px 20px; // un peu d’espace intérieur
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
 }
 
-/* Logo en haut à gauche arrondi */
+
 .header-logo {
-    height: 60px; // ajuste la taille comme tu veux
+    height: 60px; 
     width: auto;
-    border-radius: 50%; // arrondi complet (cercle)
-    object-fit: cover; // pour bien remplir l’espace
+    border-radius: 50%; 
+    object-fit: cover; 
 }
 
-/* Nav en haut à droite */
+
 .header-nav ul {
     list-style: none;
     display: flex;
-    gap: 20px; // espace entre les liens
+    gap: 20px; 
     margin: 0;
     padding: 0;
 }
