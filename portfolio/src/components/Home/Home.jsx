@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Home.scss";
 
 
 function Home(){
     return (
-        <div >
+        <div className="home">
         <p>  Hey, je suis <strong>Anthony NOEL KIRUPARAJAH</strong>,<br />
         Je suis développeur Full-Stack, spécialisée en accessibilité numérique
         (A11Y). Passionnée par le développement front-end et back-end, j'aime
