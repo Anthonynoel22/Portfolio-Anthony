@@ -6,12 +6,13 @@ import "./Header.scss";
 function Header() {
     return (
         <header className="header">
+            <a href="/">
             <img 
                 src={logo}
                 alt="logo portfolio"
                 className="header-logo"
-
             />
+            </a>
             <nav className="header-nav">
                 <ul>
                     <li>

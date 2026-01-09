@@ -1,13 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Maestro from "../../assets/logo_maestro.png";
-import "./Project.scss"; 
+import "./Project.scss";
 
 const projects = [
     {
         title: "Site Maestro",
         description: "Site d'un compositeur de musique",
         link: "https://maestro-front-anthony.netlify.app/",
+        githubLinks: [
+            {
+                name: "GitHub Back",
+                url: "https://github.com/Anthonynoel22/maestro-back",
+            },
+            {
+                name: "GitHub Front",
+                url: "https://github.com/Anthonynoel22/maestro-front",
+            },
+        ],
         image: Maestro,
     },
 ];
@@ -25,14 +35,29 @@ function Project() {
                             alt={`aperçu de ${project.title}`}
                         />
                         <p>{project.description}</p>
-                        <Link
-                            to={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="project-link" 
-                        >
-                            Voir le projet
-                        </Link>
+                        
+                        
+                        <div className="buttons-container">
+                            <Link
+                                to={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-link"
+                            >
+                                Voir en ligne
+                            </Link>
+                            {project.githubLinks.map((repo, idx) => (
+                                <a
+                                    key={idx}
+                                    href={repo.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="project-link"
+                                >
+                                    {repo.name}
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 ))}
             </div>
@@ -41,3 +66,6 @@ function Project() {
 }
 
 export default Project;
+
+
+

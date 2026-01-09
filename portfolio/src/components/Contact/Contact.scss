@@ -1,13 +1,43 @@
+@use "/src/style/mixin";
+@use "/src/style/var";
+
 .contact-container {
     text-align: center;
     padding-top: 18.75rem;
     padding-bottom: 18.75rem;
 }
 
+.contact-container h1 {
+    font-family: var.$font-title;
+    font-size: var.$font-size-h1;
+}
+
 .links-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
     flex-wrap: wrap;
+    padding-top: 50px;
+}
 
+.links-container a {
+    color: var.$font-color;
+    font-size: var.$font-size-link;
+    text-decoration: none;
+    
+    // Ajout pour les icônes
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: color 0.3s ease;
+}
+
+.links-container a .icon {
+    font-size: 1.8em;
+    transition: transform 0.3s ease;
+}
+
+
+.links-container a:hover .icon {
+    transform: scale(1.15);
 }

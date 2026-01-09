@@ -1,11 +1,11 @@
 // Les polices
-$font-main: "Roboto Serif"; // font title
-$font-alt: "Inria Serif"; // font text
+$font-title: "Roboto Serif" serif; // font title
+$font-text: "Inria Serif", serif; // font text
 
 
 
 // Tailles de police
-$font-size-base: 1rem; // texte
+$font-size-text: 1.5rem; // texte
 $font-size-link: 2rem; // liens
 $font-size-h1: 3rem;   // titres H1
 
