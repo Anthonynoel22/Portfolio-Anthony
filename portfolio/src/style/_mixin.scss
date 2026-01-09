@@ -1,0 +1,9 @@
+@use "./var";
+
+
+// Desktop
+@mixin desktop {
+    @media (min-width: var.$breakpoint-desktop) {
+        @content;
+    }
+}
