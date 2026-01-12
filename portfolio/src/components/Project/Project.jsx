@@ -46,9 +46,9 @@ function Project() {
                             >
                                 Voir en ligne
                             </Link>
-                            {project.githubLinks.map((repo, idx) => (
+                            {project.githubLinks.map((repo, index) => (
                                 <a
-                                    key={idx}
+                                    key={index}
                                     href={repo.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
