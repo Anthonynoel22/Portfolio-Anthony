@@ -2,7 +2,7 @@
 @use "/src/style/var";
 
 .project-container {
-    padding: 2rem 1rem;
+    padding: 15rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -31,28 +31,42 @@
     transition: transform 0.3s ease;
 }
 
-.project-card:hover {
+/* .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+} */
+
+@media (max-width: 425px) {
+    .project-card h2 {
+        padding-left: 90px;
+    }
 }
 
-.project-card h2 {
-    padding-left: 135px;
+@media (max-width: 375px) {
+    .project-card h2 {
+        padding-left: 70px;
+    }
+}
+
+@media (max-width: 320px) {
+    .project-card h2 {
+        padding-left: 40px;
+    }
 }
 
 .project-card img {
-    width: 120px; 
-    height: 120px; 
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
-    display: block; 
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .project-card p {
-    padding-left: 90px;
+    padding-left: 50px;
 }
 
 .buttons-container {
@@ -80,5 +94,14 @@
     background: #2980b9;
 }
 
-
-
+@include mixin.desktop {
+    .project-container {
+        padding: 10rem 1rem;
+    }
+    .project-card h2 {
+        padding-left: 80px;
+    }
+    .project-card p {
+        padding-left: 50px;
+    }
+}
