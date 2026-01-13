@@ -1,18 +1,30 @@
 import React from "react";
 import "./Home.scss";
 
-
-function Home(){
+function Home() {
     return (
         <div className="home">
-        <h1 className="home-title">Hey, je suis Anthony NOEL KIRUPARAJAH</h1>
-        <p className="home-text">Je suis développeur Full-Stack, spécialisée en accessibilité numérique
-        (A11Y). Passionnée par le développement front-end et back-end, j'aime
-        concevoir des interfaces utilisateur intuitives et accessibles. Toujours
-        curieux et avide de nouvelles connaissances, j'aime explorer les
-        nouvelles technologies.</p>
+            <h1 className="home-title">
+                Hey, je suis Anthony NOEL KIRUPARAJAH
+            </h1>
+            <p className="home-text">
+                Je suis développeur Full-Stack, spécialisé·e en accessibilité
+                numérique (A11Y). J’accorde une importance particulière à la
+                création d’expériences web inclusives, intuitives et
+                performantes, en plaçant toujours l’utilisateur au centre de mes
+                réflexions. Sur le plan front-end, je conçois des interfaces
+                claires et accessibles, tout en veillant à la cohérence visuelle
+                et à la fluidité de l’expérience utilisateur. Côté back-end, je
+                m’assure du bon fonctionnement, de la sécurité et de la
+                scalabilité des applications que je développe. Passionné par
+                l’innovation et animé par la curiosité, je reste en veille
+                constante sur les nouvelles technologies et les meilleures
+                pratiques du web. Mon objectif : contribuer à un web plus
+                inclusif, durable et humain, en alliant performance technique et
+                accessibilité.
+            </p>
         </div>
     );
-};
+}
 
 export default Home;

@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, NavLink } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import logo from "../../assets/Logo portfolio.png";
 import "./Header.scss";
 
 function Header() {
+    const location = useLocation();
+
     return (
         <header className="header" role="banner">
-
             <Link to="/" className="header-logo-link" aria-label="Accueil">
                 <img
                     src={logo}
@@ -19,9 +20,36 @@ function Header() {
             {/* Desktop Navigation */}
             <nav className="header-nav-desktop" role="navigation" aria-label="Navigation principale">
                 <ul className="nav-list">
-                    <li><Link to="/" className="nav-link">Accueil</Link></li>
-                    <li><Link to="/projets" className="nav-link">Mes projets</Link></li>
-                    <li><Link to="/contact" className="nav-link">Contact</Link></li>
+                    <li>
+                        <NavLink 
+                            to="/" 
+                            className={({ isActive }) => 
+                                `nav-link ${isActive ? 'nav-link-active' : ''}`
+                            }
+                        >
+                            Accueil
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
+                            to="/projets" 
+                            className={({ isActive }) => 
+                                `nav-link ${isActive ? 'nav-link-active' : ''}`
+                            }
+                        >
+                            Mes projets
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink 
+                            to="/contact" 
+                            className={({ isActive }) => 
+                                `nav-link ${isActive ? 'nav-link-active' : ''}`
+                            }
+                        >
+                            Contact
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
 
@@ -41,9 +69,11 @@ function Header() {
                         <ul className="dropdown-list" role="menu">
                             <li role="none">
                                 <Dropdown.Item 
-                                    as={Link} 
+                                    as={NavLink} 
                                     to="/" 
-                                    className="dropdown-link" 
+                                    className={({ isActive }) => 
+                                        `dropdown-link ${isActive ? 'dropdown-link-active' : ''}`
+                                    }
                                     role="menuitem"
                                 >
                                     Accueil
@@ -51,9 +81,11 @@ function Header() {
                             </li>
                             <li role="none">
                                 <Dropdown.Item 
-                                    as={Link} 
+                                    as={NavLink} 
                                     to="/projets" 
-                                    className="dropdown-link" 
+                                    className={({ isActive }) => 
+                                        `dropdown-link ${isActive ? 'dropdown-link-active' : ''}`
+                                    }
                                     role="menuitem"
                                 >
                                     Mes projets
@@ -61,9 +93,11 @@ function Header() {
                             </li>
                             <li role="none">
                                 <Dropdown.Item 
-                                    as={Link} 
+                                    as={NavLink} 
                                     to="/contact" 
-                                    className="dropdown-link" 
+                                    className={({ isActive }) => 
+                                        `dropdown-link ${isActive ? 'dropdown-link-active' : ''}`
+                                    }
                                     role="menuitem"
                                 >
                                     Contact
@@ -78,3 +112,4 @@ function Header() {
 }
 
 export default Header;
+
