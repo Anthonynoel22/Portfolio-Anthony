@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: relative;
+    position: sticky;
 }
 
 .header-logo {
@@ -27,14 +27,11 @@
     border-radius: 40px;
     border: none;
     cursor: pointer;
-    // padding: 16px !important;
     width: 72px !important;
     height: 72px !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
-
     text-decoration: none !important;
     text-decoration-line: none !important;
     appearance: none !important;
@@ -47,12 +44,6 @@
     &::after {
         display: none !important;
     }
-
-/*     &:hover {
-        background: rgba(0, 0, 0, 0.4);
-        transform: scale(1.05);
-        text-decoration: none !important;
-    } */
 }
 
 .mobile-dropdown-menu {
@@ -87,28 +78,36 @@
         gap: 16px;
 
         .dropdown-link {
-            color: #333;
+            color: var.$font-color;
             text-decoration: none;
-            font-size: 18px;
+            font-size: var.$font-size-link-mobile;
+            font-family: var.$font-text;
             font-weight: 600;
             padding: 12px 24px;
             border-radius: 8px;
-            transition: all 0.3s ease;
             text-align: center;
             min-width: 200px;
-
-            &:hover {
-                background-color: #f8f9fa;
-                transform: translateY(-2px);
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            }
         }
     }
 }
 
 .header-nav-desktop {
     display: none;
+}
 
+.header-nav-mobile {
+    // mobile d'abord
+    display: block;
+}
+
+//  pour gérer desktop
+@include mixin.desktop {
+    .header-logo {
+        height: 100px;
+        width: 100px;
+    }
+
+.header-nav-desktop {
     .nav-list {
         display: flex;
         list-style: none;
@@ -118,42 +117,22 @@
         align-items: center;
 
         .nav-link {
+            font-size: var.$font-size-link;
+            font-family: var.$font-text;
             color: var.$font-color;
             text-decoration: none;
-            font-size: 16px;
             font-weight: 500;
             padding: 8px 16px;
             border-radius: 6px;
-            // transition: all 0.3s ease;
+            }
         }
-    }
-}
-
-.header-nav-mobile {
-    // mobile d'abord
-    display: block;
-}
-
-// Un seul include pour gérer desktop
-@include mixin.desktop {
-    .header-logo{
-        height: 100px;
-        width: 100px;
     }
 
 .header-nav-desktop {
-    .nav-list {
-        .nav-link {
-        font-size: var.$font-size-link;
-        }
-    }
-}
-
-    .header-nav-desktop {
         display: flex;
     }
 
-    .header-nav-mobile {
-        display: none ;
+.header-nav-mobile {
+        display: none;
     }
 }
