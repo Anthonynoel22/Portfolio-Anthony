@@ -2,20 +2,41 @@
 @use "/src/style/var";
 
 .home {
-    text-align: center;
-    padding-top: 18.75rem;
-    padding-bottom: 18.75rem;
+    padding-top: 16rem;
+    padding-bottom: 16rem;
 }
 
 .home-title {
+    text-align: center;
     font-family: var.$font-title;
     font-size: var.$font-size-h1;
     margin-bottom: 30px;
 }
 
 .home-text {
+    text-align: left;
     font-family: var.$font-text;
     font-size: var.$font-size-text;
     margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+@include mixin.desktop {
+    .home {
+        padding-top: 20rem;
+        padding-bottom: 20rem;
+    }
+    .home-text {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .home-text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

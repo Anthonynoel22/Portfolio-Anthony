@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Linkedin, Github } from "react-bootstrap-icons";
+import { Linkedin, Github, Book } from "react-bootstrap-icons";
 import "./Contact.scss";
 
 function Contact() {
     return (
         <div className="contact-container">
-            <h1>Contact</h1>
+            <h1 className="contact-title">
+                <Book className="icon annuaire-icon" />
+                Contact
+            </h1>
+
             <div className="links-container">
                 <Link
                     to="https://www.linkedin.com/in/anthony-noel-kiruparajah/"

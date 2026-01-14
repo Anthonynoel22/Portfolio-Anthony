@@ -8,7 +8,7 @@ function Home() {
                 Hey, je suis Anthony NOEL KIRUPARAJAH
             </h1>
             <p className="home-text">
-                Je suis développeur Full-Stack, spécialisé·e en accessibilité
+                Développeur Full-Stack, spécialisé en accessibilité
                 numérique (A11Y). J’accorde une importance particulière à la
                 création d’expériences web inclusives, intuitives et
                 performantes, en plaçant toujours l’utilisateur au centre de mes

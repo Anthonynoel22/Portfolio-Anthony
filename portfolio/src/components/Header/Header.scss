@@ -82,14 +82,18 @@
             text-decoration: none;
             font-size: var.$font-size-link-mobile;
             font-family: var.$font-text;
-            font-weight: 600;
+            font-weight: 500;
             padding: 12px 24px;
-            border-radius: 8px;
             text-align: center;
-            min-width: 200px;
+
             &.active {
-                text-decoration: underline;
+                color: black; // texte noir
+                font-weight: 600;
+                text-decoration-line: underline;
+                text-decoration-color: #2980b9; // couleur du soulignement
+                text-decoration-thickness: 2px; //  épaisseur
                 background-color: transparent;
+                transform: scale(1.05);
             }
         }
     }
@@ -128,14 +132,12 @@
                 text-decoration: none; // aucun soulignement par défaut
                 font-weight: 500;
                 padding: 8px 16px;
-                border-radius: 6px;
-                transition: color 0.3s ease, transform 0.2s ease;
 
                 &.nav-link-active {
                     color: black; // lien mis en avant
                     font-weight: 600;
                     text-decoration: underline;
-                    text-decoration-color: black;
+                    text-decoration-color: #2980b9;
                     transform: scale(1.05);
                 }
             }
@@ -146,5 +148,3 @@
         display: none;
     }
 }
-
-

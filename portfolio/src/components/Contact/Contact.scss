@@ -12,6 +12,19 @@
     font-size: var.$font-size-h1;
 }
 
+.contact-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem; // espace entre l’icône et le texte
+    font-family: var.$font-title;
+    font-size: var.$font-size-h1;
+}
+
+.annuaire-icon {
+    font-size: 3.5rem; 
+}
+
+
 .links-container {
     display: flex;
     justify-content: center;
@@ -28,7 +41,7 @@
     // Ajout pour les icônes
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 1.5rem;
     transition: color 0.3s ease;
 }
 
@@ -40,4 +53,11 @@
 
 .links-container a:hover .icon {
     transform: scale(1.15);
+}
+
+@include mixin.desktop {
+    .contact-container {
+    padding-top: 25rem;
+    padding-bottom: 25rem;
+    }
 }
