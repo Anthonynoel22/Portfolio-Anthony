@@ -22,6 +22,27 @@
     padding-right: 20px;
 }
 
+/* Emoji main qui salue avec mouvement très naturel */
+.wave-emoji {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 1em; // taille adaptée au titre
+    animation: wave-natural 2.8s ease-in-out infinite;
+    transform-origin: 55% 75%; // pivot au poignet pour effet réaliste
+}
+
+@keyframes wave-natural {
+    0%, 60%, 100% { 
+        transform: rotate(0deg); 
+    }
+    10%, 30%, 50% { 
+        transform: rotate(15deg); 
+    }
+    20%, 40% { 
+        transform: rotate(-10deg); 
+    }
+}
+
 @include mixin.desktop {
     .home {
         padding-top: 20rem;
@@ -32,11 +53,20 @@
         padding-right: 30px;
         font-size: 2rem;
     }
+
 }
 
 @media (max-width: 320px) {
+    .home-title {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .home-text {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .wave-emoji {
+        font-size: 1em;
+    }
 }
+

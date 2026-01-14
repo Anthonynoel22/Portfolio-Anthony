@@ -45,7 +45,7 @@ function Header() {
                                 `nav-link ${isActive ? "nav-link-active" : ""}`
                             }
                         >
-                            Mes projets
+                            Projets
                         </NavLink>
                     </li>
                     <li>
@@ -102,7 +102,7 @@ function Header() {
                                     to="/projets"
                                     onClick={handleClose}
                                 >
-                                    Mes projets
+                                    Projets
                                 </Dropdown.Item>
                             </li>
                             <li>

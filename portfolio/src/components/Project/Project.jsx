@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { PersonWorkspace } from "react-bootstrap-icons"; // ✅ import icône
 import Maestro from "../../assets/logo_maestro.png";
 import "./Project.scss";
 
@@ -9,14 +10,8 @@ const projects = [
         description: "Site d'un compositeur de musique",
         link: "https://maestro-front-anthony.netlify.app/",
         githubLinks: [
-            {
-                name: "GitHub Back",
-                url: "https://github.com/Anthonynoel22/maestro-back",
-            },
-            {
-                name: "GitHub Front",
-                url: "https://github.com/Anthonynoel22/maestro-front",
-            },
+            { name: "GitHub Back", url: "https://github.com/Anthonynoel22/maestro-back" },
+            { name: "GitHub Front", url: "https://github.com/Anthonynoel22/maestro-front" },
         ],
         image: Maestro,
     },
@@ -25,7 +20,12 @@ const projects = [
 function Project() {
     return (
         <div className="project-container">
-            <h1>Mes projets</h1>
+            <div className="title-container">
+            <h1 className="title">
+                <PersonWorkspace className="project-icon" /> {/* ✅ icône ajoutée */}
+                Projets
+            </h1>
+        </div>
             <div className="project-list">
                 {projects.map((project, index) => (
                     <div key={index} className="project-card">
@@ -35,8 +35,7 @@ function Project() {
                             alt={`aperçu de ${project.title}`}
                         />
                         <p>{project.description}</p>
-                        
-                        
+
                         <div className="buttons-container">
                             <Link
                                 to={project.link}
@@ -66,6 +65,3 @@ function Project() {
 }
 
 export default Project;
-
-
-
