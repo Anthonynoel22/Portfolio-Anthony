@@ -34,6 +34,12 @@
     align-items: center;
     justify-content: center;
     text-decoration-line: none !important;
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    background: none;
+
+
 
     &::before,
     &::after {
