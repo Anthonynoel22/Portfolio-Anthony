@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Linkedin, Github, Book } from "react-bootstrap-icons";
+import { Linkedin, Github } from "react-bootstrap-icons";
 import "./Contact.scss";
 
 function Contact() {
     return (
         <div className="contact-container">
             <h1 className="contact-title">
-                <Book className="icon annuaire-icon" />
+                <span role="img" aria-label="malette" className="icon malette-icon">💼</span>
                 Contact
             </h1>
 
@@ -39,3 +39,4 @@ function Contact() {
 }
 
 export default Contact;
+

@@ -22,11 +22,9 @@
     padding-right: 20px;
 }
 
-/* Emoji main qui salue avec mouvement très naturel */
+
 .wave-emoji {
     display: inline-block;
-    margin-left: 0.5rem;
-    font-size: 1em; // taille adaptée au titre
     animation: wave-natural 2.8s ease-in-out infinite;
     transform-origin: 55% 75%; // pivot au poignet pour effet réaliste
 }
@@ -64,9 +62,6 @@
     .home-text {
         padding-left: 10px;
         padding-right: 10px;
-    }
-    .wave-emoji {
-        font-size: 1em;
     }
 }
 

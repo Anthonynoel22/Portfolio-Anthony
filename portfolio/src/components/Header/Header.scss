@@ -14,6 +14,7 @@
     width: 60px;
     border-radius: 50%;
     object-fit: cover;
+    margin-top: 5px;
 }
 
 .header-nav-mobile {
@@ -27,18 +28,12 @@
     border-radius: 40px;
     border: none;
     cursor: pointer;
-    width: 72px !important;
-    height: 72px !important;
+    width: 72px;
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none !important;
     text-decoration-line: none !important;
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    background: none;
-    position: relative;
 
     &::before,
     &::after {
@@ -47,30 +42,21 @@
 }
 
 .mobile-dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
     width: 100vw;
     background-color: white;
-    border-radius: 0;
+
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     border: none;
-    margin: 0;
+
     min-height: 200px;
     padding: 40px 20px;
-    z-index: 1000;
-    transform: translateX(-50%);
+
+    right: 50%;
     left: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
 
     .dropdown-list {
         list-style: none;
-        margin: 0;
+
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -84,7 +70,6 @@
             font-family: var.$font-text;
             font-weight: 500;
             padding: 12px 24px;
-            text-align: center;
 
             &.active {
                 color: black; // texte noir
@@ -121,9 +106,7 @@
             display: flex;
             list-style: none;
             margin: 0;
-            padding: 0;
             gap: 30px;
-            align-items: center;
 
             .nav-link {
                 font-size: var.$font-size-link;

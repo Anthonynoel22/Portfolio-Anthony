@@ -20,8 +20,9 @@
     font-size: var.$font-size-h1;
 }
 
-.annuaire-icon {
-    font-size: 3.5rem; 
+.malette-icon {
+    font-size: 3rem; 
+    padding-bottom: 10px;
 }
 
 
@@ -42,7 +43,6 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    transition: color 0.3s ease;
 }
 
 .links-container a .icon {

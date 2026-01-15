@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PersonWorkspace } from "react-bootstrap-icons"; // ✅ import icône
 import Maestro from "../../assets/logo_maestro.png";
 import "./Project.scss";
 
@@ -21,11 +20,11 @@ function Project() {
     return (
         <div className="project-container">
             <div className="title-container">
-            <h1 className="title">
-                <PersonWorkspace className="project-icon" /> {/* ✅ icône ajoutée */}
-                Projets
-            </h1>
-        </div>
+                <h1 className="title">
+                    <span role="img" aria-label="informaticien" className="project-icon">💻</span>
+                    Projets
+                </h1>
+            </div>
             <div className="project-list">
                 {projects.map((project, index) => (
                     <div key={index} className="project-card">
@@ -65,3 +64,4 @@ function Project() {
 }
 
 export default Project;
+
