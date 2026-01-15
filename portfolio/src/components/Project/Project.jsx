@@ -1,13 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Maestro from "../../assets/logo_maestro.png";
 import "./Project.scss";
 
 const projects = [
     {
-        title: "Site Maestro",
+        title: "Maestro",
         description: "Site d'un compositeur de musique",
-        link: "https://maestro-front-anthony.netlify.app/",
+        link: "https://maestro-front-anthony.netlify.app",
         githubLinks: [
             { name: "GitHub Back", url: "https://github.com/Anthonynoel22/maestro-back" },
             { name: "GitHub Front", url: "https://github.com/Anthonynoel22/maestro-front" },
@@ -36,14 +35,14 @@ function Project() {
                         <p>{project.description}</p>
 
                         <div className="buttons-container">
-                            <Link
-                                to={project.link}
+                            <a
+                                href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="project-link"
                             >
                                 Voir en ligne
-                            </Link>
+                            </a>
                             {project.githubLinks.map((repo, index) => (
                                 <a
                                     key={index}

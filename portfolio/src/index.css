@@ -1,12 +1,8 @@
 .App {
     display: flex;
     flex-direction: column;
-
-    /*garantit que le conteneur prend toujours au moins la hauteur 
-  totale de la fenêtre du navigateur*/
-    min-height: 100vh;
+    min-height: 100vh; /*garantit que le conteneur prend toujours au moins la hauteur totale de la fenêtre du navigateur*/
 }
-
 
 body {
   background-color: #C59165;

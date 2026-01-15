@@ -5,12 +5,17 @@ import logo from "../../assets/logo_portfolio.png";
 import "./Header.scss";
 
 function Header() {
+
+    // isMenuOpen est un boolean qui indique si le menu est ouvert(true) ou fermé(false) 
+    // setIsMenuOpen permet de modifier isMenuOpen. il met à jour l’état et redirige le composant pour qu’il affiche le bon contenu.
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    // fonction du composant Dropdown qui détecte un changement d’ouverture fermeture quand on clique sur le menu burger 
     const handleToggle = (isOpen) => {
         setIsMenuOpen(isOpen);
     };
 
+    //Cette fonction sert à fermer le menu au clic d'un lien en mode mobile 
     const handleClose = () => {
         setIsMenuOpen(false);
     };
@@ -84,7 +89,7 @@ function Header() {
                     <Dropdown.Menu
                         className="mobile-dropdown-menu"
                         role="menu"
-                        align="end"
+                        align="end" // Aligne le menu à droite
                     >
                         <ul className="dropdown-list" role="menu">
                             <li>

@@ -35,14 +35,12 @@
 }
 
 .links-container a {
-    color: var.$font-color;
-    font-size: var.$font-size-link;
-    text-decoration: none;
-    
-    // Ajout pour les icônes
     display: flex;
     align-items: center;
+    text-decoration: none;
     gap: 1.5rem;
+    color: var.$font-color;
+    font-size: var.$font-size-link;
 }
 
 .links-container a .icon {

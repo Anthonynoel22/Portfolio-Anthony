@@ -44,23 +44,19 @@
 .mobile-dropdown-menu {
     width: 100vw;
     background-color: white;
-
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     border: none;
-
     min-height: 200px;
     padding: 40px 20px;
-
     right: 50%;
     left: 50%;
 
     .dropdown-list {
-        list-style: none;
-
-        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        list-style: none;
+        padding: 0;
         gap: 16px;
 
         .dropdown-item {
@@ -75,7 +71,7 @@
                 color: black; // texte noir
                 font-weight: 600;
                 text-decoration-line: underline;
-                text-decoration-color: #2980b9; // couleur du soulignement
+                text-decoration-color: #2980b9; 
                 text-decoration-thickness: 2px; //  épaisseur
                 background-color: transparent;
                 transform: scale(1.05);
@@ -112,7 +108,7 @@
                 font-size: var.$font-size-link;
                 font-family: var.$font-text;
                 color: var.$font-color;
-                text-decoration: none; // aucun soulignement par défaut
+                text-decoration: none; 
                 font-weight: 500;
                 padding: 8px 16px;
 
