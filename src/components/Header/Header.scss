@@ -34,12 +34,6 @@
     align-items: center;
     justify-content: center;
     text-decoration-line: none !important;
-    appearance: none !important;
-    -moz-appearance: none !important;
-    -webkit-appearance: none !important;
-    background: none;
-
-
 
     &::before,
     &::after {
@@ -72,6 +66,7 @@
             font-family: var.$font-text;
             font-weight: 500;
             padding: 12px 24px;
+            background-color: transparent;
 
             &.active {
                 color: black; // texte noir
