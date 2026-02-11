@@ -1,5 +1,6 @@
 import React from "react";
 import Maestro from "../../assets/logo_maestro.png";
+import API_Dog from "../../assets/cute-dog-logo_1051-3349.avif";
 import "./Project.scss";
 
 const projects = [
@@ -12,6 +13,16 @@ const projects = [
             { name: "GitHub Front", url: "https://github.com/Anthonynoel22/maestro-front" },
         ],
         image: Maestro,
+    },
+
+    {
+        title: "API_Dog",
+        description: "Api react sur les chiens",
+        link: "https://api-react-dog.netlify.app/",
+        githubLinks: [
+            { name: "GitHub", url: "https://github.com/Anthonynoel22/API-React"},
+        ],
+        image: API_Dog,
     },
 ];
 
