@@ -31,7 +31,7 @@ function Project() {
         <div className="project-container">
             <div className="title-container">
                 <h1 className="title">
-                    <span role="img" aria-label="informaticien" className="project-icon">💻</span>
+                    <span role="img" aria-label="computer" className="project-icon">💻</span>
                     Projets
                 </h1>
             </div>
@@ -58,8 +58,8 @@ function Project() {
                                 <a
                                     key={index}
                                     href={repo.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    target="_blank" // ouvre dans un nouvel onglet
+                                    rel="noopener noreferrer" // sécurité et confidentialité 
                                     className="project-link"
                                 >
                                     {repo.name}

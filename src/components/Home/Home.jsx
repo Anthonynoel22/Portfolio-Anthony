@@ -6,7 +6,7 @@ function Home() {
         <div className="home">
             <h1 className="home-title">
                 Hey, je suis Anthony NOEL KIRUPARAJAH{" "}
-                <span className="wave-emoji" role="img" aria-label="salut">
+                <span className="wave-emoji" role="img" aria-label="hello">
                     🖐️
                 </span>
             </h1>

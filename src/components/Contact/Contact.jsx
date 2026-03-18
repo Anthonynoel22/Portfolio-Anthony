@@ -6,7 +6,7 @@ function Contact() {
     return (
         <div className="contact-container"> 
             <h1 className="contact-title">
-                <span role="img" aria-label="malette" className="icon malette-icon">💼</span> 
+                <span role="img" aria-label="briefcase" className="icon malette-icon">💼</span> 
                 Contact
             </h1>
 
