@@ -1,6 +1,7 @@
 import React from "react";
 import Maestro from "../../assets/logo_maestro.png";
-import API_Dog from "../../assets/cute-dog-logo_1051-3349.avif";
+import API_Dog from "../../assets/logo_dog.avif";
+import World_Tour from "../../assets/logo_planet.png";
 import "./Project.scss";
 
 const projects = [
@@ -24,6 +25,16 @@ const projects = [
         ],
         image: API_Dog,
     },
+
+    {
+        title: "World Tour",
+        description: "Site de voyage de destinations",
+        link: "https://world-tour-anthony.netlify.app/",
+        githubLinks: [
+            { name:"GitHub", url: "https://github.com/Anthonynoel22/World-Tour"}
+        ],
+        image: World_Tour,
+    }
 ];
 
 function Project() {
