@@ -2,6 +2,7 @@ import React from "react";
 import Maestro from "../../assets/logo_maestro.png";
 import API_Dog from "../../assets/logo_dog.avif";
 import World_Tour from "../../assets/logo_planet.png";
+import Quiz from "../../assets/question.png";
 import "./Project.scss";
 
 const projects = [
@@ -34,6 +35,16 @@ const projects = [
             { name:"GitHub", url: "https://github.com/Anthonynoel22/World-Tour"}
         ],
         image: World_Tour,
+    },
+
+    {
+        title: "Quiz",
+        description: "Quiz sur les capitales des pays",
+        link: "https://quiz-anthony.netlify.app/",
+        githubLinks: [
+            {name:"Github", url: "https://github.com/Anthonynoel22/Quiz"}
+        ],
+        image: Quiz,
     }
 ];
 
